@@ -1,4 +1,13 @@
 /****** General ***********/
+:root {
+    --main-color: #0065FC;
+    --main-color-hover: #DEEBFF;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+    --border-color: #d9d9d9;
+    --main-text-color: #000;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -20,11 +29,6 @@ input, button, textarea, select {
   font: inherit;
 }
 
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-}
 
 .fa-solid {
     color: var(--main-color);
@@ -41,10 +45,11 @@ body {
     padding: 0 50px;
 }
 
+/* HEADER */
+
 .main-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
 }
 
 .main-header .logo {
@@ -64,7 +69,7 @@ body {
 .main-nav a {
     border-top: solid 2px transparent;
     text-decoration: none;
-    color: black;
+    color: var(--main-text-color);
     padding: 14px 0;
     display: inline-block;
 }
@@ -73,6 +78,118 @@ body {
     color: var(--main-color);
     border-color: var(--main-color);
 }
+
+/* Filters */
+
+.filter-section {
+    margin-top:30px;
+    margin-bottom: 35px;
+}
+
+.main-subtitle {
+    margin-top: 8px;
+}
+
+.search-bar {
+    margin-top: 35px;
+    display: flex;
+    font-weight: bold;
+}
+
+.search-bar label {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 51px;
+    border-radius: 15px 0 0 15px;
+    border: 1px solid var(--main-bg-color);
+    border-right: none;
+}
+
+.search-bar input {
+    border: 1px solid var(--main-bg-color);
+    border-right: none;
+    border-left: none;
+    font-weight: bold;
+    padding: 14px;
+}
+
+.search-bar button {
+    display: block;
+    background-color: var(--main-color);
+    padding: 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    border: none;
+}
+
+.search-bar button:is(:hover, :focus) {
+    background-color: var(--main-color-hover);
+    color: var(--main-text-color);
+    box-shadow: inset 3px 3px 2px var(--main-bg-color);
+}
+
+.search-bar button i {
+    display: none;
+}
+
+.filter-bar {
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+}
+
+.filter-bar ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.filter-bar li {
+    padding: 15px;
+}
+
+.filter-bar a {
+    padding: 15px 19px;
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    font-weight: bold;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.filter-bar a:is(.active, :hover, :focus) {
+    background-color: var(--main-color-hover);
+}
+
+.filter-bar a i {
+    padding-right: 10px;
+}
+
+.filter-indication {
+    display: flex;
+    align-items: middle;
+}
+
+.filter-indication i {
+    height: 24px;
+    width: 24px;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 4px; 
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+}
+
+.filter-indication p {
+    padding-top: 3px;
+}
+
+/* Global */
 
 .section-title {
     margin: 0;

@@ -236,6 +236,25 @@ body {
     width: 65%;
 }
 
+.hebergements > a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin: 30px 0;
+}
+
+.hebergements > a:is(:hover, :focus) {
+    text-decoration: underline;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
 .hebergements-cards .card {
     position: relative;
     display: flex;

@@ -171,7 +171,7 @@ body {
 
 .filter-indication {
     display: flex;
-    align-items: middle;
+    align-items: center;
 }
 
 .filter-indication i {

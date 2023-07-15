@@ -143,17 +143,14 @@ body {
     align-items: center;
 }
 
-.filter-bar ul {
+.filter-bar fieldset {
     padding: 0;
-    list-style-type: none;
     display: flex;
+    border: 0;
 }
 
-.filter-bar li {
-    padding: 15px;
-}
-
-.filter-bar a {
+.filter-bar label {
+    margin: 7px;
     padding: 15px 19px;
     border: 2px solid var(--border-color);
     border-radius: 25px;
@@ -162,11 +159,13 @@ body {
     text-decoration: none;
 }
 
-.filter-bar a:is(.active, :hover, :focus) {
+/* need A11Y fix three state required (focus) */
+.filter-bar input:is(:checked, :hover) + label {
     background-color: var(--main-color-hover);
+    cursor: pointer;
 }
 
-.filter-bar a i {
+.filter-bar label i {
     padding-right: 10px;
 }
 
@@ -175,15 +174,16 @@ body {
     align-items: center;
 }
 
-.filter-indication i {
-    height: 24px;
-    width: 24px;
-    font-size: 12px;
-    text-align: center;
-    padding: 5px 4px; 
-    margin-right: 10px;
+.filter-indication div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    width: 23px;
     border-radius: 50%;
-    border: 1px solid var(--border-color);
+    margin-right: 10px;
+    border: 1px solid var(--border-color); 
+    font-size: 10px;
 }
 
 .filter-indication p {

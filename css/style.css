@@ -306,7 +306,7 @@ body {
 
 .hebergements-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 
@@ -368,6 +368,13 @@ body {
     padding: 30px;
 }
 
+.activities-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 33px;
+}
+
 .activities .card {
     padding: 0;
     position: relative;
@@ -375,29 +382,23 @@ body {
 }
 
 .activities .card img {
+    --heigth-activities-card: 380px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 88.84%;
+    width: 100%;
+    height: var(--heigth-activities-card);
+    object-fit: cover;
 }
 
 .activities .card-title {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.activities .card a {
+    display: block;
     padding: 20px;
-}
-.activities .card a {
-    text-decoration: none;
-    color: var(--main-text-color);
-}
-
-.activities .card a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.activities .card a {
     text-decoration: none;
     color: var(--main-text-color);
 }
@@ -422,12 +423,6 @@ body {
     box-shadow: 3px 3px 15px rgba(3, 3, 3, 0.8);
 }
 
-.activities-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 33px;
-}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 

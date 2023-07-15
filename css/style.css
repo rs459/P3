@@ -423,6 +423,42 @@ body {
     box-shadow: 3px 3px 15px rgba(3, 3, 3, 0.8);
 }
 
+/****** Footer ********/
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.main-footer .main-footer_list {
+    width: 31.17%;
+}
+
+.main-footer .main-footer_list-title {
+    font-size: 1.125rem;
+}
+
+.main-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-footer li {
+    margin-top: 15px;
+}
+
+.main-footer a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.main-footer a:is(:hover, :focus) {
+    text-decoration: underline;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 

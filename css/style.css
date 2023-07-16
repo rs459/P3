@@ -51,6 +51,7 @@ body {
 .main-header {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .main-header .logo {
@@ -61,6 +62,7 @@ body {
     list-style-type: none;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
 }
 
 .main-nav li:first-child {
@@ -499,5 +501,33 @@ body {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) { 
-    /* ... */
+
+    .main-container {
+        padding: 0;
+    }
+     
+    /****** Header *****/
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-nav {
+        width: 100%;
+    }
+    
+    .main-nav li {
+        width: 50%;
+    }
+
+    .main-nav li:first-child {
+        margin-right: 0;
+    }
+
+    .main-nav a {
+        width: 100%;
+        text-align: center;
+        border-top: 0;
+        border-bottom: 2px solid transparent;
+    }
 }

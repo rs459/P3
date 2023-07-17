@@ -154,6 +154,7 @@ body {
 
 .filter-bar h2 {
     font-size: 1.125rem;
+    margin-right: 7px;
 }
 
 .filter-bar fieldset {
@@ -517,7 +518,7 @@ body {
         align-items: flex-start;
     }
 
-    .filter-bar fielset {
+    .filter-bar fieldset {
         padding-top: 13px;
     }
 
@@ -553,11 +554,11 @@ body {
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 0.875rem;
     }
 
     /*** activities ***/
@@ -679,8 +680,7 @@ body {
         flex-shrink: 0;
     }
 
-    .hebergements-and-populaires
-        section {
+    .hebergements-and-populaires section {
         border-radius: 0;
     }
 
@@ -694,6 +694,7 @@ body {
     /*** Populaires ***/
     .populaires {
         border-radius: 0;
+        margin-top: 0px;
     }
 
     .populaires-cards {

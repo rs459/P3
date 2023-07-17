@@ -144,6 +144,11 @@ body {
     padding: 35px 0;
     display: flex;
     align-items: center;
+    align-content: flex-start;
+}
+
+.filter-bar h2 {
+    font-size: 1.125rem;
 }
 
 .filter-bar fieldset {
@@ -157,6 +162,7 @@ body {
     padding: 15px 19px;
     border: 2px solid var(--border-color);
     border-radius: 25px;
+    font-size: 1.0625rem;
     font-weight: bold;
     color: var(--main-text-color);
     text-decoration: none;
@@ -468,6 +474,26 @@ body {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    /*** filter-bar ***/
+    
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-bar fielset {
+        padding-top: 13px;
+    }
+
+    .filter-bar label {
+        font-size: 1rem;
+    }
+
+    .filter-bar label:first-of-type {
+        margin-left: 0;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -544,6 +570,7 @@ body {
         border-bottom: 2px solid transparent;
     }
 
+    /*** FILTERS ****/
     /*** search-bar ****/
 
     .search-bar {
@@ -580,7 +607,31 @@ body {
         position: absolute !important;
         width: 1px !important;
         white-space: nowrap !important;
-    }
+    }   
     
+    /*** filter-bar ***/
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .filter-bar fieldset {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .filter-bar label {
+        margin: 0;
+        width: 48.51%;
+        font-size: 0.875rem;
+        margin-top: 20px;
+    }
+
+    /*** filter-indication ***/
+
+    .filter-indication div {
+       flex-basis: 24px;
+       flex-grow: 0;
+       flex-shrink: 0;
+    }
 }

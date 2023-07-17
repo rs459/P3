@@ -244,7 +244,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.125rem;
-    margin: 30px 0;
+    /* margin: 30px 0; */
 }
 
 .hebergements > a:is(:hover, :focus) {
@@ -505,7 +505,19 @@ body {
     .main-container {
         padding: 0;
     }
-     
+
+    section {
+        padding: 0 20px;
+    }
+
+    .populaires {
+        order: -1;
+    }
+
+    section.hebergements {
+        background-color: var(--secondary-bg-color);
+    }
+
     /****** Header *****/
     .main-header {
         flex-direction: column;
@@ -530,4 +542,7 @@ body {
         border-top: 0;
         border-bottom: 2px solid transparent;
     }
+
+    
+
 }

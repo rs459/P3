@@ -353,6 +353,7 @@ body {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    position: relative;
 }
 
 .populaires-cards img {

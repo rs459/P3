@@ -145,6 +145,10 @@ body {
     color: var(--secondary-bg-color);
 }
 
+.search-bar button:is(:hover, :focus) i {
+    color: var(--main-text-color);
+}
+
 .filter-bar {
     padding: 35px 0;
     display: flex;

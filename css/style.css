@@ -132,6 +132,7 @@ body {
     color: var(--secondary-bg-color);
     border-radius: 0 15px 15px 0;
     border: none;
+    font-size: 1.125rem;
 }
 
 .search-bar button:is(:hover, :focus) {
@@ -168,7 +169,7 @@ body {
 }
 
 .filter-bar label {
-    margin: 7px;
+    margin: 8px;
     padding: 15px 19px;
     border: 2px solid var(--border-color);
     border-radius: 25px;
@@ -644,16 +645,13 @@ body {
     }
 
     .search-bar button span {
-        border: 0 !important;
-        clip: rect(1px, 1px, 1px, 1px) !important;
-        -webkit-clip-path: inset(50%) !important;
-        clip-path: inset(50%) !important;
-        height: 1px !important;
-        overflow: hidden !important;
-        padding: 0 !important;
-        position: absolute !important;
-        width: 1px !important;
-        white-space: nowrap !important;
+        border: none;
+        height: 1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap;
     }   
     
     /*** filter-bar ***/
